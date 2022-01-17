@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="script.js"></script>
+</head>
+<body onload="onStart()">
+    <div> 
+        <h2>Largest sum of braking and accelerating</h2>
+            <h3>Car Type:</h3>
+            <h3 id=maxCarType></h3>
+            <h3>Driver Name:</h3>
+            <h3 id=maxDriverName></h3>
+    </div>
+    <div>
+        <form>
+            <label>Area In KM:</label><br>
+            <input type="number" id="areaKM" min=0><br>
+            <label>History Limit:</label><br>
+            <input type="number" id="historyLimit" min=0><br>
+            <input type="submit" value="Submit" onclick="getLatestAccidentsVector(); return false">
+          </form>
+    </div>
+    <div id='accidentsKM' style="visibility: hidden;">
+        <h2 >Nummber Of Accidents: </h2>
+        <h3 id=numOfAccidents></h3>
+        <br>
+        <h2 >Square X,Y: </h2>
+        <h4 id=squareXY></h4>
+    </div>
+</body>
+
+</html>
